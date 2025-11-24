@@ -1,0 +1,15 @@
+# Go build
+*.exe
+*.out
+*.test
+
+# Build folders
+/bin/
+/build/
+
+# IDE
+.vscode/
+.idea/
+
+# Env files
+.env
