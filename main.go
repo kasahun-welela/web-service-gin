@@ -55,6 +55,12 @@ func getAlbumByID(c *gin.Context) {
 
 func main() {
 	router := gin.Default()
+
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(http.StatusOK, gin.H{
+			"message": "Welcome to Gin Framework!",
+		})
+	})
 	router.GET("/albums", getAlbums)
 	router.POST("/albums", postAlbums)
 	router.GET("/albums/:id", getAlbumByID)
